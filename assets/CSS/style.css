@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+
+:root {
+    margin: 0px;
+    padding: 0px;
+    font-family: Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    color: var(--primary-font-colour);
+}
+
+body{
+    background-color: var(--background-colour);
+    background-image: url('/assets/img/Background.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*----- Header -----*/
+
+header{
+    background: var(--transparent-background-colour);
+}
+
+/*----- Nav -----*/
+.main-nav {
+    display: flex;
+    min-height: 3rem;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fascinate', cursive;
+}
+.logo {
+    padding: 0 2rem;
+}
+.nav-links {
+    display: flex;
+    position: static;
+    width: 100%;
+    padding-left: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links > li {
+    list-style: none;
+    width: 100%;
+}
+
+.nav-links > li > a {
+    color: var(--primary-font-colour);
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+
+.nav-links > li > a > span{
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.nav-links > li > a > span:hover{
+    color: var(--primary-colour);
+}
+
+/*----- Hero Slideshow -----*/
+
+.heroSlide{
+    padding-top: 2rem;
+    border-top: solid 1px var(--primary-colour);
+}
+
+.heroSlide > a > img{
+    width: 100%;
+}
+
+/*----- Main -----*/
+
+main{
+    background: var(--transparent-background-colour);
+    padding: 1rem 0.5rem;
+}
+
+main > section:not(:first-child){
+    border-top: solid 1px var(--primary-colour);
+}
+
+main > section > p:first-child{
+    margin-top: 0px;
+    font-weight: bold ;
+}
+
+main > section > p{
+    font-family:  Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+
+/*----- Main Event Section -----*/
+
+#main__event-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main__event-section > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+#main__event-section > h2 {
+    text-align: center;
+}
+
+#main__event-section > section > div{
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+
+#main__event-section > section > div > img{
+    width: 100%;
+}
+#main__event-section > section > div > p{
+    text-align: left;
+}
+
+/*----- Main CTA -----*/
+
+#main__CTA-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*----- Main CTA Feature-----*/
+
+#main__CTA-section__feature{
+    margin-bottom: 3.5rem;
+}
+
+#main__CTA-section__feature > p{
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-family: 'Fascinate', cursive;
+}
+
+#main__CTA-section__feature > p:nth-child(1){
+    font-size: 2rem;
+    transform: rotate(15deg) translatey(70px) translateX(20px);
+}
+#main__CTA-section__feature > p:nth-child(2){
+    font-size: 2rem;
+    transform: rotate(-20deg) translatey(40px)  translateX(-40px);
+}
+#main__CTA-section__feature > p:nth-child(3){
+    transform: rotate(-25deg) translatey(30px)  translateX(-30px);
+}
+#main__CTA-section__feature > p:nth-child(4){
+    font-size: 2rem;
+    transform: rotate(-15deg) translatey(30px)  translateX(90px);
+}
+#main__CTA-section__feature > p:nth-child(5){
+    transform: rotate(1deg) translatey(30px);
+}
+#main__CTA-section__feature > p:nth-child(6){
+    font-size: 2rem;
+    transform: translateY(20px);
+}
+#main__CTA-section__feature > p:nth-child(7){
+    font-size: 2rem;
+    transform: rotate(-20deg) translateX(30px);
+}
+
+
+/*----- Main CTA Newsletter -----*/
+
+#main__CTA-section__newsletter-signup-section{
+    height: 250px;
+}
+
+#newsletter_form{
+    height: fit-content;
+    padding: 1rem 1rem;
+    background-color: var(--primary-colour);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#newsletter_form > h2{
+    font-size: 4rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-family: 'Fascinate', cursive;
+}
+
+#newsletter_form > h3 {
+    font-weight: 200;
+}
+
+#newsletter_form > input{
+    height: 2.25rem;
+    width: 98%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#newsletter_form > button{
+    height: 2rem;
+    width: 98%;
+    padding: 0px 1rem;
+    background-color: var(--primary-button-colour);
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    background:linear-gradient(180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(0,0,0,0.5) 100%), linear-gradient(90deg, rgba(0,0,0,0.25) 0%, rgba(255,255,255,0) 2%, rgba(255,255,255,0) 98%, rgba(0,0,0,0.25) 100%) , var(--primary-button-colour);
+
+}
+
+/*----- Footer -----*/
+
+footer{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    background: #000000;
+    padding: 1rem 0.5rem;
+}
+
+footer > section:last-child > p{
+    text-align: center;
+}
+
+footer > section > div > a > img{
+    max-height: 30px;
+}
+
+
+/*----- Media Queries -----*/
+@media screen and (min-width: 760px) {
+    .main-nav{
+        flex-direction: row;
+    }
+    .nav-links {
+        display: flex;
+        position: static;
+        width: 70%;
+        box-shadow: none;
+        align-self: baseline;
+    }
+    #main__CTA-section__feature{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main{
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main__event-section > section{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #main__event-section > section > div{
+        width: 30%;
+    }
+
+    #main__CTA-section{
+        flex-direction: row;
+    }
+
+    footer{
+        max-width:  960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,9 @@
+:root{
+    --primary-colour: #92711c;
+    --background-colour: #000000;
+    --transparent-background-colour: rgba(0, 0, 0, 0.6);
+
+    --primary-font-colour: #ffffff;
+
+    --primary-button-colour: #674f13;
+}
